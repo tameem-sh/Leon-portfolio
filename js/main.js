@@ -4,15 +4,11 @@ let Dropdown = document.getElementById("Dropdown");
 
 Dropdown.addEventListener("click", () => {
     show.classList.toggle("show");
-    Dropdown.classList.toggle("fa-x");
-    Dropdown.classList.toggle("fa-bars");
 })
 
 window.onclick = function (event) {
     if (!event.target.matches('.dropdown')) {
         show.classList.add("show");
-        Dropdown.classList.toggle("fa-x");
-        Dropdown.classList.toggle("fa-bars");
     }
 }
 
