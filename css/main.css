@@ -99,7 +99,7 @@ header img {
     position: absolute;
     background-color: var(--section-background);
     min-width: 200px;
-    right: -3px;
+    right: 0;
     top: calc(100% + 15px);
 }
 
