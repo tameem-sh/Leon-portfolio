@@ -231,12 +231,13 @@ header img {
 .third-section .services-content {
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
-    grid-gap: 40px;
+    grid-gap: 2rem;
     margin-top: 100px;
 }
 
 .third-section .services-content .ser {
     display: flex;
+    padding: 0.25rem;
     margin-bottom: 40px;
 }
 
@@ -308,11 +309,13 @@ header img {
 
 .fourth-section .card {
     background-color: white;
+    border-radius: 14px;
 }
 
 .fourth-section .card img {
     max-width: 100%;
     max-width: 100%;
+    border-radius: 14px;
 }
 
 .fourth-section .card .info {
@@ -467,4 +470,41 @@ footer {
 footer span {
     font-weight: bold;
     color: var(--main-color);
+}
+
+
+/* Hover on cards */
+
+.bg-hover {
+    background-color: transparent;
+    color: inherit;
+    border-radius: 14px;
+    transition: all 0.4s ease-in-out;
+}
+
+.bg-hover:hover {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    border-radius: 14px;
+    transition: all 0.4s ease-in-out;
+}
+
+.bg-hover p {
+    color: initial;
+    transition: all 0.4s ease-in-out;
+}
+
+.bg-hover:hover p {
+    color: var(--section-background);
+    transition: all 0.4s ease-in-out;
+}
+
+.pro-hover {
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+}
+
+.pro-hover:hover {
+    transform: scale(1.03);
+    transition: all 0.4s ease-in-out;
 }
